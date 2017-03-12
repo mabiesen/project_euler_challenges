@@ -5,6 +5,15 @@
 # specifically, the challenge wants to know the sum of all multiples
 #  3 and 5 within 1000 (not including)
 
+# to test the challenge in the context of this application
+# 1.  Enter 1000 when prompted for the first number
+# 2.  Enter 3 when prompted for the second number
+# 3.  You will be provided a sum and an array, and you will be asked if you want to 
+#     provide a second number.  choose y
+# 4.  Enter 5 when prompted for the new multiple search number
+
+# Per online resources, the output should be:  233168
+# Currently, the application yields: 266333
 
 
 # Find multiples and add to array multiplesHash array
