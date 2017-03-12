@@ -97,7 +97,8 @@ end
 
 
 
-
+#  This is an option to search for a secondary multiple
+#   This option is necessary per challenge requirements
 def anotherMultiple()
 	puts "Would you like to find the multiples of a different number?"
 	puts "NOTE: The sum provided will be the sum of BOTH multiples"
