@@ -5,6 +5,8 @@
 # specifically, the challenge wants to know the sum of all multiples
 #  3 and 5 within 1000 (not including)
 
+
+
 # Find multiples and add to array multiplesHash array
 def findMultiples(withinNumber, findThis, multiplesHash)
 	numberoccur = withinNumber/findThis
@@ -20,12 +22,16 @@ def findMultiples(withinNumber, findThis, multiplesHash)
 	puts "The sum of all multiples provided is now " + sum.to_s
 end
 
+
+
 # Get the number we are going to find multiples in
 def getMainNumber()
 	puts "Please enter the number we will find the multiples in."
 	withinNumber = gets.chomp
 	return withinNumber.to_i
 end
+
+
 
 # Get the number whose multiples we are going to look for
 def getMultiplesNumber()
@@ -34,38 +40,53 @@ def getMultiplesNumber()
 	return findThis.to_i
 end
 
+
+
 #Greet the User
 def programGreeting()
 	puts "This program is designed to find all multiples of a number within a given number"
 	puts "The program will then also provide the sum of these multiples"
 end
 
+
+
 # Wait for user to enter the correct input before proceeding
 # Function accepts one argument myvar, which can be of any data type
 # Function has no returns
 def waitforinput(myvar)
-	puts "Please enter " + myvar.to_s + " to continue."
-	name = gets.chomp
-	if name.to_s != myvar.to_s
-		puts "That was not the correct input"
-		waitforinput(myvar)
-	else
-		puts "The program will now proceed"
+
+	name = "m"
+	while name.to_s != myvar.to_s
+		puts "Please enter " + myvar.to_s + " to continue."
+		name = gets.chomp
+		if name.to_s != myvar.to_s
+			puts "That was not the correct input"
+		end
 	end
+
+	puts "The program will now proceed"
 end
 
 
+
+
+#  Prompt user for a yes or no answer
 def yesnoinput()
-	puts "Please enter " + "y" + " or " + "n" + "to continue."
-	ans = gets.chomp
-	if ans.to_s != "n" && ans.to_s != "y"
-		puts "That was not the correct input"
-		yesnoinput()
-	else
-		puts "The program will now proceed"
+
+	ans = "m"
+	while ans.to_s != "n" && ans.to_s != "y"
+		puts "Please enter " + "y" + " or " + "n" + "to continue."
+		ans = gets.chomp
+		if ans.to_s != "n" && ans.to_s != "y"
+				puts "That was not the correct input.  Please try again."
+		end
 	end
+
+	puts "The program will now proceed"
 	return ans
 end
+
+
 
 
 def anotherMultiple()
@@ -75,8 +96,12 @@ def anotherMultiple()
 	return ans
 end
 
+
+
 # array which will contain ALL multiples requested during session
 multiplesHash = []
+
+
 
 # container for functions
 def mainContainer(multiplesHash)
@@ -91,6 +116,8 @@ def mainContainer(multiplesHash)
 	end
 	puts "Thanks for playing!"
 end
+
+
 
 # Call to kick off the program
 mainContainer(multiplesHash)
