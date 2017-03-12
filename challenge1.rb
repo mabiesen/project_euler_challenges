@@ -25,6 +25,7 @@ def findMultiples(withinNumber, findThis, multiplesHash)
 
 	1.upto(numberoccur){|x| multiplesHash.push(x * findThis)}
 
+	multiplesHash.uniq!
 	sum = multiplesHash.inject {|x, sum| sum + x}
 
 	puts "multiplesHash: " + (multiplesHash.each {|x| puts x}).to_s
@@ -101,7 +102,7 @@ end
 #   This option is necessary per challenge requirements
 def anotherMultiple()
 	puts "Would you like to find the multiples of a different number?"
-	puts "NOTE: The sum provided will be the sum of BOTH multiples"
+	puts "NOTE: The sum provided will be the sum of BOTH multiples(no duplicates)"
 	ans = yesnoinput()
 	return ans
 end
