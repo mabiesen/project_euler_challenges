@@ -1,12 +1,12 @@
-/* Find even fibonacci numbers less than 4m */
+/* Find sum of even fibonacci numbers less than 4m */
 /*And my first C code!!!!*/
 
 /*C code was found to be functional with gcc compiler on ubuntu linux*/
 
 #include<stdio.h>
 
-//Primary function to find fibonacci numbers, determine if they are even, and add as necessary
-//Additionally, the code adds fib numbers to an array... the array is not used
+//Primary function to find fibonacci numbers, determine if they are even, and add as necessary to sum
+//Additionally, the code adds fib numbers to an array... the array is not used at this time
 void getfib(long a[], int size){
 	long pushfib = 0;
 	long tempfiba = 1;
