@@ -13,10 +13,9 @@
 # 4.  Enter 5 when prompted for the new multiple search number
 
 # Per online resources, the output should be:  233168
-# Currently, the application yields: 266333
 
 
-# Find multiples and add to array multiplesHash array
+# Find multiples and add to multiplesHash array
 def findMultiples(withinNumber, findThis, multiplesHash)
 	numberoccur = withinNumber/findThis
 	if withinNumber%findThis == 0
