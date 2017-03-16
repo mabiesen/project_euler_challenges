@@ -24,8 +24,8 @@ function getNumber(){
 	});
 }
 
-// 'i' and 'v' set to 2 initially as all number divisible by 1
-// divcount variable used to determine if a number is prime
+// 'i' and 'v' set to 2 initially as all numbers are divisible by 1
+// divcount variable used to determine if a number is prime.  A count greater than zero is not.
 // if found to be prime, we determine if it is a factor of givennumber
 // if it is a factor, we print! the last number printed is the largest.
 function findLargest(givennumber){
