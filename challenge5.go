@@ -1,7 +1,7 @@
 package main
 
 //Euler challenge5 in golang
-//Challenge is to find the lowest numbers
+//Challenge is to find the lowest number
 // divisible evenly by all numbers 1 through 20
 
 import "fmt"
