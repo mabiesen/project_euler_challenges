@@ -6,10 +6,10 @@ Projects are being completed in the order provided by project Euler.
 
 Project language is determined by rotation.  In order, I am rotating the following languages
 
-*Ruby
-*C
-*Javascript
-*Python
-*Golang
+* Ruby
+* C
+* Javascript
+* Python
+* Golang
 
 Only completed projects are posted in this repository.
