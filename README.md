@@ -12,4 +12,6 @@ Project language is determined by rotation.  In order, I am rotating the followi
 * Python
 * Golang
 
+I anticipate using VB/VBA as well moving forward.
+
 Only completed projects are posted in this repository.
