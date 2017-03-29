@@ -13,12 +13,12 @@
 //Get the number of divisors from a given number
 int GetDivisors(long long mysum){
   int ctr = 0;
-	float mymod;
-	long long revsum;
+  float mymod;
+  long long revsum;
 
-	//We only need to evaluate half of mysum
-	mymod = mysum%2;
-	revsum = mysum - mymod;
+   //We only need to evaluate half of mysum
+   mymod = mysum%2;
+   revsum = mysum - mymod;
 
   for(long long i=1;i<=mysum;i++){
       if(mysum%i == 0){
@@ -32,22 +32,22 @@ int GetDivisors(long long mysum){
 
 //This is the main container for the program
 void main(){
-		int mindivisors;
+    int mindivisors;
     int currentdiv;
     long long currentsum;
-		long long mynum;
+    long long mynum;
 
-		mynum = 1;
+    mynum = 1;
     currentsum = 0;
     currentdiv = 0;
 
-		//mindivisors variable is the number of divisors we are looking for
-		mindivisors = 500;
-		// Call function to determine range
-		// Use range to create a mynum that seems an acceptable starting search point
+    //mindivisors variable is the number of divisors we are looking for
+    mindivisors = 500;
+    // Call function to determine range
+    // Use range to create a mynum that seems an acceptable starting search point
 
-		// This is the main loop of the program, designed to break when we have obtained our number
-		while (currentdiv < mindivisors){
+    // This is the main loop of the program, designed to break when we have obtained our number
+	while (currentdiv < mindivisors){
         currentsum = currentsum + mynum;
         currentdiv = GetDivisors(currentsum);
 				mynum = mynum + 1;
