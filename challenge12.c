@@ -24,7 +24,7 @@ int GetDivisors(long long mysum){
       if(mysum%i == 0){
           ctr = ctr + 1;
       }
-}
+   }
 
     // Since we only evaluated numbers up to half the value of mynum, we must add one more for the value of mynum
     return ctr + 1;
