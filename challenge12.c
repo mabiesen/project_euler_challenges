@@ -47,10 +47,10 @@ void main(){
     // Use range to create a mynum that seems an acceptable starting search point
 
     // This is the main loop of the program, designed to break when we have obtained our number
-	while (currentdiv < mindivisors){
+    while (currentdiv < mindivisors){
         currentsum = currentsum + mynum;
         currentdiv = GetDivisors(currentsum);
-				mynum = mynum + 1;
+	mynum = mynum + 1;
     }
     printf("result: %lld\n", currentsum);
 
