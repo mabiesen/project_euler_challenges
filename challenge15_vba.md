@@ -15,9 +15,6 @@ Public Function find_lattice(numrows As Integer, numcols As Integer) As Double
     Dim colctr As Long
     Dim rowctr As Long
 
-' Lattices start with a zero mentality.  One square is representative of a point.  So to find the number of paths in a 20x20 grid, we actually need to create a 21x21 matrix
-    numcols = numcols + 1
-    numrows = numrows + 1
 
     colctr = 0
     rowctr = 0
@@ -44,7 +41,7 @@ Public Function find_lattice(numrows As Integer, numcols As Integer) As Double
         rowctr = rowctr + 1
     Loop
     
-    find_lattice = masterarray(numrows - 1, numcols - 1)
+    find_lattice = masterarray(numrows, numcols)
 
 End Function
 ```
