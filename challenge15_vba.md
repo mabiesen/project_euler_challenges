@@ -4,6 +4,7 @@
 ' MODULE PURPOSE: Find number of lattice paths in 20x20 grid
 
 ' This sub runs the function below.  Only one function created for this project
+' First argument provided to function is number of rows, second is number of columns in grid
 Sub letsrun()
 Number = find_lattice(20, 20)
 Debug.Print (Number)
