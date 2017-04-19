@@ -22,6 +22,11 @@ Public Function find_lattice(numrows As Integer, numcols As Integer) As Double
     
     ReDim masterarray(numrows, numcols) As Double
     
+    'Loop to create 2d array
+    'First two rows are known and provided.  They consist of 11111...x20 and 1....20
+    'First column in each row is known and is 1
+    'Remaining row/column data derived as this row index - 1 + last row this index.
+    
     Do While rowctr < numrows
     
         Do While colctr < numcols
