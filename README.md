@@ -1,6 +1,6 @@
 # Project Euler Challenges!!
 
-Repository to store challenges from project Euler.  Project Euler is a great math challenge website whose challenges often require programming given their magnitude. For more information, see https://projecteuler.net/about
+Repository to store challenges from project Euler.  Project Euler is a great math challenge website whose challenges often require programming given their magnitude. For more information, see https://projecteuler.net/about.
 
 Projects are being completed in the order provided by project Euler.
 
